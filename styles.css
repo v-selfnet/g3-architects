@@ -1,0 +1,71 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Poppins&family=Rubik+80s+Fade&family=Ubuntu:wght@500&family=Work+Sans&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      font-family: 'Work Sans', sans-serif;
+      margin: 0 auto;
+  }
+
+  .body-margin {
+      margin: 30px 150px 0 150px;
+      border: 1px solid;
+  }
+
+  /* Navbar */
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .navigation ul {
+      display: flex;
+  }
+
+  .navigation ul li a {
+      text-decoration: none;
+  }
+
+  .navigation ul li {
+      list-style: none;
+      padding-left: 15px;
+  }
+
+  /* Banner */
+  .back-color {
+      background-color: #FF900E1A;
+  }
+
+  .banner {
+      margin-top: 100px;
+      text-align: center;
+  }
+
+  .banner-title h2 {
+      font-size: 30px;
+      margin: 0 300px 10px 300px;
+      /* border: 1px solid; */
+  }
+
+  .banner-title p {
+      margin: 0 200px 10px 200px;
+      /* border: 1px solid; */
+  }
+
+  .btn-primary {
+      background-color: #FF900E;
+      border-radius: 5px;
+      box-shadow: 4px 3px 8px grey;
+      border: none;
+      width: 120px;
+      height: 30px;
+      margin-bottom: 10px;
+  }
+
+  .banner img {
+      width: 100%;
+  }
