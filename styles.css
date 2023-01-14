@@ -34,26 +34,14 @@
       list-style: none;
       padding-left: 15px;
   }
-
   /* Banner */
   .back-color {
       background-color: #FF900E1A;
+      height: 800px;
   }
-
   .banner {
       margin-top: 100px;
       text-align: center;
-  }
-
-  .banner-title h2 {
-      font-size: 30px;
-      margin: 0 300px 10px 300px;
-      /* border: 1px solid; */
-  }
-
-  .banner-title p {
-      margin: 0 200px 10px 200px;
-      /* border: 1px solid; */
   }
 
   .btn-primary {
@@ -68,4 +56,99 @@
 
   .banner img {
       width: 100%;
+      height: 100%;
+  }
+
+  /* quick list section */
+  .quick-list-flex{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 150px 0 50px;
+  }
+  .images-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 10px;
+  }
+  .image img{
+    width: 300px;
+    height: 300px;
+  }
+  .quick-contents{
+    text-align: left;
+  }
+  .quick-title{
+    font-size: 31px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+  }
+  .quick-description{
+    font-weight: 700px;
+    margin-bottom: 10px;
+  }
+/* features */
+.feature-container{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+}
+.features{
+    text-align: left;
+}
+.feature-title{
+    border-left: 5px solid orange;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.feature-sub-title {
+    margin: 20px 0 0 20px;
+}
+.feature-sub-description{
+    margin: 0 0 0 20px;
+}
+
+/* facts */
+.facts-info{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+}
+  @media screen and (max-width:576px){
+      /* responsive navbar, banner */
+      .body-margin {
+          margin: 30px 50px 30px 50px;
+          border: 1px solid;
+        }
+        .navbar {
+            flex-wrap: wrap;
+        }
+        .navigation ul {
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: right;
+        }
+        .banner-title h2 {
+            font-size: 20px;
+            margin: 0 ;
+        }
+        .banner-title p {
+            display: none;
+        }
+        /* quick list section */
+        .quick-list-flex{
+            flex-direction: column-reverse;
+          }
+          .images-grid{
+            /* display: grid; */
+            grid-template-columns: repeat(1, 0fr);
+            gap: 10px;
+          }
+        
   }
